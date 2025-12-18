@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uploaded Image</title>
+      
+</head>
+<body>
+    <link rel="stylesheet" href='styles.css'>
+
+    <h1>Click on the image to detect colour</h1>  
+    <!-- Image displayed here -->
+    <img id="uploaded-image" src="{{ url_for('uploads', filename=filename) }}" alt="Uploaded Image" style="max-width: 100%;">
+
+    <form method="POST" id="coords-form">
+        <input type="hidden" name="x" id="x-coord">
+        <input type="hidden" name="y" id="y-coord">
+    </form>
+
+    <br>
+    <button><a href="index.html">Upload Another Image</a></button>
+
+    <script>
+        document.getElementById('uploaded-image').addEventListener('click', function(event) {
+            var img = document.getElementById('uploaded-image');
+            var rect = img.getBoundingClientRect();  // Get image's position relative to the page
+            var x = Math.floor(event.clientX - rect.left);       // Truncate the x-coordinate to an integer
+            var y = Math.floor(event.clientY - rect.top);        // Truncate the y-coordinate to an integer
+            
+            // Set the hidden input fields with the coordinates
+            document.getElementById('x-coord').value = x;
+            document.getElementById('y-coord').value = y;
+
+            // Automatically submit the form to send the coordinates
+            document.getElementById('coords-form').submit();
+        });
+    </script>
+
+</body>
+</html>

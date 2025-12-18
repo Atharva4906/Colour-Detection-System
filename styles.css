@@ -1,0 +1,277 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    color:#ffffff
+}
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #f1f1f1; /* Light text */
+    padding: 20px;
+}
+p{
+    column-rule-color: aqua;
+}
+body{
+    background-color: #000000;
+}
+/* Header Styling */
+header {
+    background-color: #1f1f1f;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #00bfff; /* Blue accent */
+}
+
+/* Button Styling */
+button {
+    background-color: #00bfff; /* Blue background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0099cc; /* Darker blue when hovered */
+}
+
+/* Form Styling */
+form {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+form input[type="file"] {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form input[type="file"]:focus {
+    outline: none;
+    border: 2px solid #00bfff;
+}
+
+/* Image display section */
+#uploaded-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Color display area */
+#color-display {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1em;
+    color: #aaa;
+}
+
+footer a {
+    color: #0c7294;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #f0f0f0; /* Light text color */
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #4d9eeb; /* Blue color */
+}
+
+/* Container for Image and Color Display */
+.container {
+    text-align: center;
+}
+
+/* Image Styling */
+uploaded-image {
+    max-width: 100%;
+    border: 5px solid #4d9eeb; /* Blue border around image */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Add shadow for effect */
+}
+
+/* Color Display Section */
+color-display {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: #333;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+color-info {
+    color: #fff;
+}
+
+/* Button Styling */
+button {
+    background-color: #4d9eeb; /* Blue background */
+    color: white;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3587c1; /* Darker blue on hover */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #bbb;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+header {
+    background-color: #03182e;
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.hero {
+    background: linear-gradient(to bottom right, #007BFF, #0056b3);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+nav {
+    background-color: #007BFF;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+body {
+    background: linear-gradient(to bottom right, #000000, #003268);
+    color: white;
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .uploaded-image {
+        max-width: 90%;
+    }
+}
